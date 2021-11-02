@@ -1,0 +1,24 @@
+{
+  "name": "acol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://face-hh: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@github.com/WekyDev/Amit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WekyDev/Amit/issues"
+  },
+  "homepage": "https://github.com/WekyDev/Amit#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "eris": "github:DonovanDMC/eris#everything"
+  }
+}
