@@ -1,12 +1,16 @@
-module.exports = (client) => {
-    console.log('BOT is ONLINE!');
-    (() => {
-        client.createGuildCommand('881813009876520980', {
-        name: 'test',
-        description: 'a ping cmd',
-        type: 1,
-    })
-    .then(() => console.log('Command created.'))
-    .catch(console.error);
-    })()
-}
+const Event = require('../Structures/EventBase');
+
+module.exports = class extends Event {
+	constructor(...args) {
+		super(...args, {
+			once: true,
+		});
+	}
+	async run() {
+		this.client.utils.loadInteractions()
+			.then(console.log('DONE interactions.'))
+			.catch(console.error);
+
+		console.log('BOT is ONLINE!');
+	}
+};

@@ -1,8 +1,8 @@
 require('dotenv').config();
 
-const Eris = require('eris');
-const client = new Eris(`Bot ${process.env.TOKEN}`);
+const Acol = require('./Structures/Bot');
+const config = require('./Structures/BotConfig');
 
-require('./utils/handlers')(client);
+const client = new Acol(config);
 
 client.connect();

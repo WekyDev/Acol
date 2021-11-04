@@ -19,6 +19,7 @@
   "homepage": "https://github.com/WekyDev/Amit#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "eris": "github:DonovanDMC/eris#everything"
+    "eris": "github:DonovanDMC/eris#everything",
+    "glob": "^7.2.0"
   }
 }
