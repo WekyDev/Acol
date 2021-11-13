@@ -3,7 +3,7 @@ const Utils = require('./BotUtils.js');
 
 module.exports = class BotClient extends Client {
 	constructor(options = {}) {
-		super(options.token);
+		super(options.token, { restMode: true });
 
 		this.validate(options);
 
@@ -25,7 +25,8 @@ module.exports = class BotClient extends Client {
 
 	async connect() {
 		this.utils.loadEvents()
-			.then(console.log('DONE events.'))
+			.then(console.log('-------------------================================----------------------'))
+			.then(console.log('-------------------           EVENTS DONE          ----------------------'))
 			.catch(console.error);
 
 		await super.connect();

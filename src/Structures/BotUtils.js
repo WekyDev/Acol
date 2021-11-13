@@ -36,4 +36,12 @@ module.exports = class Utilities {
 
 		}
 	}
+	async createInteractionCollector(options) {
+		const dir = require('../Custom/interactionCollector');
+		return dir.collectInteractions(options);
+	}
+	async createConfirmation(client, interaction, user1, user2, callback) {
+		const dir = require('../Custom/createConfirmation');
+		return new dir().start(client, interaction, user1, user2, callback);
+	}
 };

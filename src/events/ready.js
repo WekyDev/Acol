@@ -8,9 +8,9 @@ module.exports = class extends Event {
 	}
 	async run() {
 		this.client.utils.loadInteractions()
-			.then(console.log('DONE interactions.'))
+			.then(console.log('-------------------================================----------------------'))
+			.then(console.log('-------------------        INTERACTIONS DONE       ----------------------'))
 			.catch(console.error);
 
-		console.log('BOT is ONLINE!');
 	}
 };
